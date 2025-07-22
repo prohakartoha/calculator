@@ -1,0 +1,95 @@
+html {
+    background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+    min-height: 100vh;
+    color: white;
+}
+
+#buttons {
+    padding: 20px;
+    text-align: center;
+}
+
+#buttons .but {
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(145deg, #ffff00, #e6e600);
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    color: #333;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#buttons .but:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #ffff33, #ffff00);
+}
+
+#buttons .but:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.znak {
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(145deg, #6b6b00, #5a5a00);
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.znak:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #7b7b00, #6b6b00);
+}
+
+.znak:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    border: none;
+    background: transparent;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 150px;
+    resize: none;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    width: calc(100% - 40px);
+    outline: none;
+    caret-color: yellow;
+}
+
+hr {
+    height: 3px;
+    border: none;
+    background: linear-gradient(90deg, transparent, rgba(107, 107, 0, 0.8), transparent);
+    margin: 0 20px;
+}
+
+.calculator-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
