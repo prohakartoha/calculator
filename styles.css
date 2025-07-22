@@ -93,3 +93,62 @@ hr {
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.calculator {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    padding: 10px;
+}
+
+.row {
+    display: contents;
+}
+
+#buttons .but, .znak {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    font-size: 5vw;
+    margin: 0;
+}
+
+button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+textarea {
+    font-size: 10vw;
+    height: 20vh;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+@media (min-width: 600px) {
+    #buttons .but, .znak {
+        font-size: 30px;
+    }
+    textarea {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 400px) {
+    #buttons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #buttons .but, .znak {
+        font-size: 4vh;
+    }
+}
